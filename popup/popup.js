@@ -494,14 +494,3 @@ window.addEventListener( 'DOMContentLoaded' , tabs2list.init );
 invisibleToDebugger ?
 Das Components-Objekt sollte nicht mehr verwendet werden. Es wird bald entfernt.
 */
-Components.utils.import("resource://gre/modules/PluralForm.jsm");
-
-// Let's get Irish (plural rule #11)
-let [get, numForms] = PluralForm.makeGetter(11);
-
-// Make up some values to use with "get"
-let dummyText = "form 1;form 2;form 3;form 4;form 5";
-let dummyNum = 10;
-
-// In the case of Irish, the value 10 uses plural form #4, so "form 4" is printed
-print(get(dummyNum, dummyText));
