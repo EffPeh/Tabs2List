@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>__MSG_extension_name__ - __MSG_Options__</title>
+		<link rel="stylesheet" href="options.css"/>
+	</head>
+
+	<body>
+
+		<nav id="sidebar">
+			<div id="logo"></div>
+			<h1 id="logo-title">__MSG_extension_name__</h1>
+			<div class="switch active" data="section-option">__MSG_OP_Options__</div>
+			<div class="switch" data="section-info">__MSG_OP_Infos__</div>
+		</nav>
+
+		<main id="main">
+			<section class="section" id="section-option">
+				<h1>__MSG_OP_Headline_Options__</h1>
+
+				<div class="item">
+					<label>__MSG_OP_ColorScheme__</label>
+					<div class="description">
+						__MSG_OP_ColorScheme_txt__
+					</div>
+					<div class="form">
+						<select id="option-theme">
+							<option value="light-theme">__MSG_OP_theme_light__</option> 
+							<option value="dark-theme">__MSG_OP_theme_dark__</option>
+							<option value="seaweed-theme">__MSG_OP_theme_seaweed__</option>
+							<option value="olive-theme">__MSG_OP_theme_olive__</option>
+							<option value="sepia-theme">__MSG_OP_theme_sepia__</option>
+							<option value="winter-theme">__MSG_OP_theme_winter__</option>
+							<option value="pastel-morning-theme">__MSG_OP_theme_pastel_morning__</option>
+							<option value="green-valley-theme">__MSG_OP_theme_green_valley__</option>
+							<option value="orange-brown-theme">__MSG_OP_theme_rotten_orange__</option>
+							<option value="camp-firefox-theme">__MSG_OP_theme_camp__</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="item">
+					<label>__MSG_OP_ListDisplay__</label>
+					<div class="description">
+						__MSG_OP_ListDisplay_txt__
+					</div>
+					<div class="form">
+						<input id="no-wrap" type="checkbox" value="" />
+					</div>
+				</div>
+
+				<div class="item">
+					<label>__MSG_OP_ListFontSize__</label>
+					<div class="description">
+						__MSG_OP_ListFontSize_txt__
+					</div>
+					<div class="form">
+						<input id="option-font-size" type="number" step="0.25" min="6" max="20" required="required" value="" />
+					</div>
+				</div>
+
+				<div class="item">
+					<label>__MSG_OP_AutoInterval__</label>
+					<div class="description">
+						__MSG_OP_AutoInterval_txt__
+					</div>
+					<div class="form">
+						<input id="option-auto-interval" type="number" step="1" min="1" max="1000" required="required" value="" />
+					</div>
+				</div>
+
+				<div class="item">
+					<label>__MSG_OP_maxHistory__</label>
+					<div class="description">
+						__MSG_OP_maxHistory_txt__ <i>browser.sessionstore.max_tabs_undo</i> in <a id="about" href="#" target="_blank">about:config</a>.
+					</div>
+					<div class="form">
+						<input id="option-maxHistory" type="number" step="1" min="1" max="1000" required="required" value="" />
+					</div>
+				</div>				
+
+			</section>
+			<section class="section hide" id="section-info">
+
+				<h1>__MSG_H_Info__</h1>
+
+				<div class="info">
+					<h2>__MSG_H_About__</h2>
+					<p>
+						__MSG_About_A__
+					</p>
+				</div>
+
+				<div class="info">
+					<h2>__MSG_H_Features__</h2>
+					<p>
+						__MSG_extension_name__ __MSG_Features_A__
+					</p>					
+
+					<p><img src="../icons/button-close.png" /> __MSG_Features_close__</p>
+
+					<p><img src="../icons/button-pin.png" /> __MSG_Features_pin__</p>
+
+					<p><img src="../icons/button-reload.png" /> __MSG_Features_reload__</p>
+
+					<p><img src="../icons/button-hide.png" /> __MSG_Features_hide__</p>
+
+					<p><img src="../icons/button-search.png" /> __MSG_Features_search__</p>
+
+					<p><img src="../icons/button-create.png" /> __MSG_Features_create__</p>
+
+					<p><img src="../icons/button-auto-hide.png" /> __MSG_Features_autoHide__</p>
+
+					<p><img src="../icons/button-hide-all.png" /> __MSG_Features_hideAll__</p>
+
+					<p><img src="../icons/button-export.png" /> __MSG_Features_export__</p>
+
+					<p><img src="../icons/button-delete-history.png" /> __MSG_Features_deleteHistory__</p>
+					
+					<p><img src="../icons/button-options.png" /> __MSG_Features_options__</p>
+				</div>
+
+				<div class="info">
+					<h2>__MSG_H_Function_Detail__</h2>
+					
+					
+					<h3>__MSG_Function_H_Detail_HideTabs__ <img src="../icons/button-hide.png" /> <img src="../icons/button-hide-all.png" /> <img src="../icons/button-auto-hide.png" /></h3>
+					<p>
+						__MSG_extension_name__ __MSG_Function_Detail_HideTabs_A__
+					</p>
+					<ul>
+						<li>__MSG_HideTabs_Restriction_A__</li>
+						<li>__MSG_HideTabs_Restriction_B__</li>
+						<li>__MSG_HideTabs_Restriction_C__</li>
+						<li>__MSG_HideTabs_Restriction_D__</li>
+					</ul>
+					<p>
+						__MSG_Function_Detail_HideTabs_B__
+					</p>
+					<p class="hint">
+						__MSG_Function_Detail_HideTabs_C__<br /> 
+						<i>extensions.webextensions.tabhide.enabled</i> in <a id="about-2" href="#" target="_blank">about:config</a>
+					</p>
+					
+					
+					<h3>__MSG_H_Symbols__</h3>
+					<p>
+						__MSG_Symbols_A__
+					</p>
+					
+					<p>
+						<img src="../icons/icon-pinned.png" /> __MSG_Symbols_B__<br />
+						<img src="../icons/icon-discarded-light.png" /> __MSG_Symbols_C__<br />
+						<img src="../icons/icon-hidden-light.png" /> __MSG_Symbols_D__<br />
+						<img src="../icons/icon-default-light.png" /> __MSG_Symbols_E__
+					</p>
+					
+					
+					<h3>__MSG_H_shortcuts__</h3>
+					<p/><span class="shortcuts">ALT</span>+<span class="shortcuts">1</span> - __MSG_shortcuts_A__<p>
+					<p/><span class="shortcuts">ALT</span>+<span class="shortcuts">2</span> - __MSG_shortcuts_B__<p>
+					
+					
+				</div>
+
+				<div class="info">
+					<h2>__MSG_H_Permissions__</h2>
+					<p>
+					__MSG_extension_name__ __MSG_Permissions_txt__ <br />
+					<a href="https://support.mozilla.org/kb/permission-request-messages-firefox-extensions" target="_blank">__MSG_Permissions_link__</a>
+					</p>
+				</div>				
+
+				<div class="info">
+					<h2>__MSG_H_Attribution__</h2>
+					<p>
+						__MSG_Attribution_IconsBy__ <a href="http://p.yusukekamiyamane.com/" target="_blank">Yusuke Kamiyamane</a>.<br />
+						__MSG_Attribution_License__ <a id="license" href="#" target="_blank">Creative Commons Attribution 3.0 License</a>.
+					</p>
+				</div>
+
+			</section>
+		</main>
+		<script src="../lib/i18n.js"></script>
+		<script src="options.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,59 @@
+:root {
+	/* Sidebar > background-color */
+	--color-body-bg: rgb(12, 12, 13);
+	/* All > font color , Tabs > font color, normal */
+	--color-body: rgb(237, 237, 240);
+	/* Page Tabs > border-top-color , border-left-color , border-right-color */
+	--color-list-tab: rgb(177, 177, 179);
+	/* Page Toolbar, top > box-shadow = border color */
+	--color-list-toolbar-bs: rgb(177, 177, 179);
+	/*  Page Tabs, inactive > border-bottom-color */
+	--color-list-tab-bb: rgb(177, 177, 179);
+	/* Page Toolbar > border-bottom-color */
+	--color-tabs-toolbar-bb: rgb(12, 12, 13);
+	/* Page Toolbar > background-color */
+	--color-list-toolbar-bg: rgb(12, 12, 13);
+	/* Page Toolbar, Button Bar > background-color */
+	--color-tabs-toolbar-bg: rgb(115, 115, 115);
+	/* Page Tabs, inactive > background-color */
+	--color-list-tab-bg: rgb(102, 102, 102);
+	/* Page Tabs, active/hover > background-color */
+	--color-list-tab-hover-active-bg: rgb(115, 115, 115);
+	/* Page Tabs, active > border-bottom-color */
+	--color-list-tab-active-bb: rgb(115, 115, 115);
+	/* Page Tabs, font color */
+	--color-list-tab-font: rgb(237, 237, 240);
+	/* Page Title > background-color */
+	--color-h1-bg: rgb(115, 115, 115);
+	/* Page Title > border-top-color */
+	--color-h1-bt: rgb(115, 115, 115);
+	/* Page Title > font color */
+	--color-h1: rgb(249, 249, 250);
+	/* Page Title - Tabs Counter > font color */
+	--color-tabs-count: rgb(215, 215, 219);
+	/* List Tabs, discarded > font color  */
+	--color-discarded: rgb(177, 177, 179);
+	/* List Tabs, hidden > font color */
+	--color-hidden: rgb(177, 177, 179);
+	/* List Tabs Chronicle > font color */
+	--color-switch-history: rgb(177, 177, 179);
+	/* List Tabs > background-color */
+	--color-li-bg: rgb(42, 42, 46);
+	/* List Tabs, hover > background-color */
+	--color-li-hover-bg: rgb(115, 115, 115);
+	/* List Tabs, active > background-color */
+	--color-active-bg: rgb(115, 115, 115);
+	/* List Tabs Popup > background-color */
+	--color-popupWrap: rgb(115, 115, 115);
+	/* List Tabs > border-bottom-color */
+	--color-switch-tabs-switch-history-bb: rgb(12, 12, 13);
+	/* List Tabs > border-top-color */
+	--color-switch-tabs-switch-history-bt: rgb(177, 177, 179);
+
+	/* FavIcon, discarded Tabs */
+	--icon-discarded: url('../icons/icon-discarded-dark.png');
+	/* FavIcon, hidden Tabs */
+	--icon-hidden: url('../icons/icon-hidden-dark.png');
+	/* FavIcon, default Tabs */
+	--icon-default: url('../icons/icon-default-dark.png');
+}

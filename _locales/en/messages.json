@@ -1,0 +1,305 @@
+{
+	"extension_name": {
+		"message": "Tabs2List"
+	},
+	"extension_description": {
+		"message": "Creates a list of the tabs in the sidebar and as a popup."
+	},
+	"Tabs": {
+		"message": "Tabs"
+	},
+	"Chronic": {
+		"message": "Chronicle"
+	},
+	"TabsList": {
+		"message": "Tabs list"
+	},
+	"History": {
+		"message": "Recently closed tabs"
+	},
+	"LastVisit": {
+		"message": "Last visit"
+	},
+	"Untitled": {
+		"message": "Untitled"
+	},
+	"NewTab": {
+		"message": "Open a new tab (Strg+T)"
+	},
+	"HideAllTabs": {
+		"message": "Hide all tabs in the tab bar"
+	},
+	"DelHistory": {
+		"message": "Clear the list of all recently closed tabs"
+	},
+	"Options": {
+		"message": "Options"
+	},
+	"OP_Headline_Options": {
+		"message": "Settings"
+	},
+	"H_Info": {
+		"message": "Information"
+	},	
+	"OP_maxHistory": {
+		"message": "Maximum number of recently closed tabs"
+	},
+	"OP_link_about": {
+		"message": "https://support.mozilla.org/en-US/kb/about-config-editor-firefox"
+	},
+	"OP_link_license": {
+		"message": "https://creativecommons.org/licenses/by/3.0/deed.en"
+	},	
+	"hideTab": {
+		"message": "Hide this tab in the tab bar"
+	},
+	"closeTab": {
+		"message": "Close this tab"
+	},
+	"reloadTab": {
+		"message": "Reload this tab"
+	},
+	"pinTab": {
+		"message": "Pin or unpin this tab"
+	},
+	"closeSession": {
+		"message": "Close this tab"
+	},
+	"Export": {
+		"message": "Export list as HTML or CSV"
+	},
+	"exportHTML": {
+		"message": "Export to HTML"
+	},
+	"exportCSV": {
+		"message": "Export to CSV"
+	},
+	"OP_Options": {
+		"message": "Settings"
+	},
+	"OP_Infos": {
+		"message": "Information"
+	},
+	"OP_ColorScheme": {
+		"message": "Color scheme"
+	},
+	"OP_ColorScheme_txt": {
+		"message": "Here you can select a color scheme."
+	},
+	"OP_theme_light": {
+		"message": "Light Theme"
+	},
+	"OP_theme_dark": {
+		"message": "Dark Theme"
+	},
+	"OP_theme_seaweed": {
+		"message": "Seaweed"
+	},
+	"OP_theme_olive": {
+		"message": "Olive"
+	},
+	"OP_theme_sepia": {
+		"message": "Sepia"
+	},
+	"OP_theme_winter": {
+		"message": "Winter"
+	},
+	"OP_theme_pastel_morning": {
+		"message": "Pastel Morning"
+	},
+	"OP_theme_green_valley": {
+		"message": "Green Valley"
+	},
+	"OP_theme_rotten_orange": {
+		"message": "Rotten Orange"
+	},
+	"OP_theme_camp": {
+		"message": "Camp Firefox"
+	},
+	"OP_ListDisplay": {
+		"message": "List entries"
+	},
+	"OP_ListDisplay_txt": {
+		"message": "By default, the titles of the list entries are wrapped if the text is too long. Activate this option if you want a single-line view."
+	},
+	"OP_ListFontSize": {
+		"message": "Font size"
+	},
+	"OP_ListFontSize_txt": {
+		"message": "Here you can define the font size for the list entries."
+	},
+	"OP_maxHistory_txt": {
+		"message": "The actual maximum number is dependent on the defined value of the key "
+	},
+	"AutoHide": {
+		"message": "Hide inactive tabs automatically"
+	},
+	"OP_AutoInterval": {
+		"message": "Hide tabs automatically"
+	},
+	"OP_AutoInterval_txt": {
+		"message": "Here you can define a period (in minutes) after which inactive tabs are to be hidden if automatic hiding has been activated."
+	},
+	"H_About": {
+		"message": "About this extension"
+	},
+	"H_Features": {
+		"message": "Functions"
+	},
+	"H_Permissions": {
+		"message": "Permissions"
+	},
+	"H_Attribution": {
+		"message": "Attribution"
+	},
+	"Attribution_IconsBy": {
+		"message": "Some (modified) icons by"
+	},
+	"Attribution_License": {
+		"message": "Licensed under a"
+	},
+	"PH_Search": {
+		"message": "Search tabs"
+	},
+	"About_A": {
+		"message": "You can use this extension to display your tabs as a list in the sidebar and/or in a popup. A second view lists the recently closed tabs. In addition to various standard functions, tabs in the tab bar can be hidden manually or automatically. This helps to reduce the resources used by the browser and provides a better overview in the tab bar. Hidden tabs are still visible and quickly accessible in the list."
+	},
+	"Features_A": {
+		"message": "provides some functions that can be activated by clicking on icons. Their symbols are shortly explained here:"
+	},
+	"Features_create": {
+		"message": "- Open a new tab."
+	},
+	"Features_close": {
+		"message": "- The tab will be closed."
+	},
+	"Features_pin": {
+		"message": "- The tab is pinned or unpinned, depending on its current state."
+	},
+	"Features_reload": {
+		"message": "- The active tab will be reloaded."
+	},
+	"Features_hide": {
+		"message": "- The tab will be hidden."
+	},
+	"Features_hideAll": {
+		"message": "- All tabs will be hidden, if possible."
+	},
+	"Features_export": {
+		"message": "- This function allows you to export the current tab list as HTML or CSV."
+	},
+	"Features_autoHide": {
+		"message": "- Enables or disables the Auto-Hide function."
+	},
+	"Features_search": {
+		"message": "- Enables or disables the search function."
+	},
+	"Features_deleteHistory": {
+		"message": "- The list of all recently closed tabs will be deleted."
+	},
+	"Features_options": {
+		"message": "- Opens the Settings page."
+	},
+	"H_Function_Detail": {
+		"message": "Details"
+	},
+	"Function_H_Detail_HideTabs": {
+		"message": "Hide tabs"
+	},
+	"Function_Detail_HideTabs_A": {
+		"message": "allows you to hide individual or all tabs manually or automatically. However, there are certain restrictions. The following tabs cannot be hidden:"
+	},
+	"HideTabs_Restriction_A": {
+		"message": "Tabs that are pinned"
+	},
+	"HideTabs_Restriction_B": {
+		"message": "Tabs that are sharing their screen, microphone or camera"
+	},
+	"HideTabs_Restriction_C": {
+		"message": "The current active tab"
+	},
+	"HideTabs_Restriction_D": {
+		"message": "Tabs that are in the process of being closed"
+	},
+	"Function_Detail_HideTabs_B": {
+		"message": "Another exception will also be made for tabs that provide an audio signal. Although pinned tabs cannot be hidden, this extension unloads their contents to preserve resources. If you activate the Auto-Hide function, tabs are hidden if they have not been used in a specified time period. You can specify this time interval in the options."
+	},
+	"Function_Detail_HideTabs_C": {
+		"message": "HHint: Please note that tabs can only be hidden if you are using Firefox version 61 or higher. For version 60, the following setting must first be changed to the value \"true\":"
+	},
+	"H_Symbols": {
+		"message": "List Symbols"
+	},
+	"Symbols_A": {
+		"message": "Some symbols with the following meaning are used in the list:"
+	},
+	"Symbols_B": {
+		"message": "- Pinned tab"
+	},
+	"Symbols_C": {
+		"message": "- Tab with discarded contents"
+	},
+	"Symbols_D": {
+		"message": "- Hidden Tab"
+	},
+	"Symbols_E": {
+		"message": "- Standard symbol for tabs that do not have their own icon, for example"
+	},
+	"Tab": {
+		"message": "Tab"
+	},
+	"Tabs": {
+		"message": "Tabs"
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"H_shortcuts": {
+		"message": "Keyboard shortcuts"
+	},
+	"shortcuts_A": {
+		"message": "With these key combinations you can show and hide the sidebar."
+	},
+	"shortcuts_B": {
+		"message": "With these key combinations you can show and hide the popup."
+	},
+	"Permissions_txt": {
+		"message": "needs some permissions to be able to work. The author of the extension assures you that only the really necessary authorizations are requested."
+	},
+	"Permissions_link": {
+		"message": "Learn more about permissions"
+	}
+}

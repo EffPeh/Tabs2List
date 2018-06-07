@@ -1,0 +1,33 @@
+:root {
+	--color-body-bg: rgb(124, 123, 78);
+	--color-body: rgb(46, 45, 29);
+	--color-list-tab: rgb(46, 45, 29);
+	--color-list-toolbar-bs: rgb(46, 45, 29);
+	--color-list-tab-bb: rgb(46, 45, 29);
+	--color-tabs-toolbar-bb: rgb(46, 45, 29);
+	--color-list-toolbar-bg: rgb(124, 123, 78);
+	--color-tabs-toolbar-bg: rgb(191, 190, 120);
+	--color-list-tab-bg: rgb(155, 155, 98);
+	--color-list-tab-hover-active-bg: rgb(191, 190, 120);
+	--color-list-tab-active-bb: rgb(191, 190, 120);
+	--color-h1-bg: rgb(191, 190, 120);
+	--color-h1-bt: rgb(191, 190, 120);
+	--color-h1: rgb(30, 58, 18);
+	--color-tabs-count: rgb(50, 96, 30);
+	--color-discarded: rgb(50, 96, 30);
+	--color-hidden: rgb(50, 96, 30);
+	--color-switch-history: rgb(50, 96, 30);
+	--color-li-bg: rgb(191, 190, 120);
+	--color-li-hover-bg: rgb(245, 244, 155);
+	--color-active-bg: rgb(245, 244, 155);
+	--color-popupWrap: rgb(245, 244, 155);
+	--color-switch-tabs-switch-history-bb: rgb(37, 72, 22);
+	--color-switch-tabs-switch-history-bt: rgb(245, 244, 155);
+	
+	/* FavIcon, discarded Tabs */
+	--icon-discarded: url("../icons/icon-discarded-light.png");
+	/* FavIcon, hidden Tabs */
+	--icon-hidden: url("../icons/icon-hidden-light.png");
+	/* FavIcon, default Tabs */
+	--icon-default: url("../icons/icon-default-light.png");
+}

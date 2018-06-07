@@ -1,0 +1,299 @@
+{
+	"extension_name": {
+		"message": "Tabs2List"
+	},
+	"extension_description": {
+		"message": "Erzeugt eine Liste der Tabs in der Sidebar und als PopUp."
+	},
+	"Tabs": {
+		"message": "Tabs"
+	},
+	"Chronic": {
+		"message": "Chronik"
+	},
+	"TabsList": {
+		"message": "Tabs-Liste"
+	},
+	"History": {
+		"message": "Kürzlich geschlossene Tabs"
+	},
+	"LastVisit": {
+		"message": "Letzter Besuch"
+	},
+	"Untitled": {
+		"message": "Ohne Titel"
+	},
+	"NewTab": {
+		"message": "Einen neuen Tab öffnen (Strg+T)"
+	},
+	"HideAllTabs": {
+		"message": "Alle Tabs in der Tab-Leiste verbergen"
+	},
+	"DelHistory": {
+		"message": "Die Liste aller kürzlich geschlossenen Tabs löschen"
+	},
+	"Options": {
+		"message": "Optionen"
+	},
+	"OP_Headline_Options": {
+		"message": "Einstellungen"
+	},
+	"H_Info": {
+		"message": "Informationen"
+	},	
+	"OP_maxHistory": {
+		"message": "Maximale Anzahl der kürzlich geschlossenen Tabs"
+	},
+	"OP_link_about": {
+		"message": "https://support.mozilla.org/de/kb/konfigurationseditor-fur-firefox"
+	},
+	"OP_link_license": {
+		"message": "https://creativecommons.org/licenses/by/3.0/deed.de"
+	},	
+	"hideTab": {
+		"message": "Diesen Tab in der Tab-Leiste verbergen"
+	},
+	"closeTab": {
+		"message": "Diesen Tab schliessen"
+	},
+	"reloadTab": {
+		"message": "Diesen Tab neu laden"
+	},
+	"pinTab": {
+		"message": "Diesen Tab anheften oder ablösen"
+	},
+	"closeSession": {
+		"message": "Diesen Tab schliessen"
+	},
+	"Export": {
+		"message": "Liste als HTML oder CSV exportieren"
+	},
+	"exportHTML": {
+		"message": "Export als HTML"
+	},
+	"exportCSV": {
+		"message": "Export als CSV"
+	},
+	"OP_Options": {
+		"message": "Einstellungen"
+	},
+	"OP_Infos": {
+		"message": "Informationen"
+	},
+	"OP_ColorScheme": {
+		"message": "Farbschema"
+	},
+	"OP_ColorScheme_txt": {
+		"message": "Hier können Sie ein Farbschema auswählen."
+	},
+	"OP_theme_light": {
+		"message": "Helles Thema"
+	},
+	"OP_theme_dark": {
+		"message": "Dunkles Thema"
+	},
+	"OP_theme_seaweed": {
+		"message": "Seaweed"
+	},
+	"OP_theme_olive": {
+		"message": "Olive"
+	},
+	"OP_theme_sepia": {
+		"message": "Sepia"
+	},
+	"OP_theme_winter": {
+		"message": "Winter"
+	},
+	"OP_theme_pastel_morning": {
+		"message": "Pastel Morning"
+	},
+	"OP_theme_green_valley": {
+		"message": "Green Valley"
+	},
+	"OP_theme_rotten_orange": {
+		"message": "Rotten Orange"
+	},
+	"OP_theme_camp": {
+		"message": "Camp Firefox"
+	},
+	"OP_ListDisplay": {
+		"message": "Listeneinträge"
+	},
+	"OP_ListDisplay_txt": {
+		"message": "Standardmäßig werden die Titel der Listeneinträge umbrochen, falls der Text zu lang sein sollte. Aktivieren Sie diese Option, wenn Sie eine einzeilige Anzeige wünschen."
+	},
+	"OP_ListFontSize": {
+		"message": "Schriftgröße"
+	},
+	"OP_ListFontSize_txt": {
+		"message": "Hier können Sie die Schriftgröße für die Listeneinträge bestimmen."
+	},
+	"OP_maxHistory_txt": {
+		"message": "Die tatsächliche Maximal-Anzahl ist abhängig vom definierten Wert des Schlüssels "
+	},
+	"AutoHide": {
+		"message": "Inaktive Tabs automatisch verbergen"
+	},
+	"OP_AutoInterval": {
+		"message": "Tabs automatisch verbergen"
+	},
+	"OP_AutoInterval_txt": {
+		"message": "Hier können Sie einen Zeitraum (in Minuten) festlegen, nach dessen Ablauf inaktive Tabs verborgen werden sollen, wenn das automatische Verbergen aktiviert wurde."
+	},
+	"H_About": {
+		"message": "Über diese Erweiterung"
+	},
+	"H_Features": {
+		"message": "Funktionen"
+	},
+	"H_Permissions": {
+		"message": "Berechtigungen"
+	},
+	"H_Attribution": {
+		"message": "Attribution"
+	},
+	"Attribution_IconsBy": {
+		"message": "Einige (modifizierte) Icons von"
+	},
+	"Attribution_License": {
+		"message": "Lizenziert unter einer"
+	},
+	"PH_Search": {
+		"message": "Tabs durchsuchen"
+	},
+	"About_A": {
+		"message": "Mit Hilfe dieser Erweiterung können Sie sich Ihre Tabs als Liste in der Sidebar und/oder in einem Popup anzeigen lassen. In einer zweiten Ansicht werden die kürzlich geschlossenen Tabs gelistet. Neben verschiedenen Standard-Funktionen können Tabs in der Tab-Leiste manuell oder automatisch verborgen werden. Das hilft, die vom Browser verwendeten Ressourcen zu reduzieren und sorgt in der Tab-Leiste für eine bessere Übersicht. In der Liste sind verborgene Tabs immer noch sichtbar und schnell abrufbar."
+	},
+	"Features_A": {
+		"message": "stellt einige Funktionen zur Verfügung, die durch einen Klick auf Icons ausgelöst werden. Deren Symbole werden hier kurz erklärt:"
+	},
+	"Features_create": {
+		"message": "- Öffnet einen neuen Tab."
+	},
+	"Features_close": {
+		"message": "- Der Tab wird geschlossen."
+	},
+	"Features_pin": {
+		"message": "- Der Tab wird, je nach Zustand, angeheftet oder abgelöst."
+	},
+	"Features_reload": {
+		"message": "- Der aktive Tab wird neu geladen."
+	},
+	"Features_hide": {
+		"message": "- Der Tab wird verborgen."
+	},
+	"Features_hideAll": {
+		"message": "- Alle Tabs werden, nach Möglichkeit, verborgen."
+	},
+	"Features_export": {
+		"message": "- Diese Funktion erlaubt es, die aktuelle Tabs-Liste als HTML oder CSV zu exportieren."
+	},
+	"Features_autoHide": {
+		"message": "- Aktiviert oder deaktiviert die Auto-Hide-Funktion."
+	},
+	"Features_search": {
+		"message": "- Aktiviert oder deaktiviert die Suchfunktion."
+	},
+	"Features_deleteHistory": {
+		"message": "- Die Liste aller kürzlich geschlossenen Tabs wird gelöscht."
+	},
+	"Features_options": {
+		"message": "- Ruft die Seite mit den Einstellungen auf."
+	},
+	"H_Function_Detail": {
+		"message": "Details"
+	},
+	"Function_H_Detail_HideTabs": {
+		"message": "Tabs verbergen"
+	},
+	"Function_Detail_HideTabs_A": {
+		"message": "gibt Ihnen die Möglichkeit, einzelne oder alle Tabs manuell oder automatisch zu verbergen. Dabei gibt es jedoch gewisse Einschränkungen. Folgende Tabs können nicht verborgen werden:"
+	},
+	"HideTabs_Restriction_A": {
+		"message": "Tabs, die angeheftet sind"
+	},
+	"HideTabs_Restriction_B": {
+		"message": "Tabs, welche Bildschirm, Mikrofon oder Kamera freigegeben haben"
+	},
+	"HideTabs_Restriction_C": {
+		"message": "der aktuell aktive Tab"
+	},
+	"HideTabs_Restriction_D": {
+		"message": "Tabs, die gerade geschlossen werden"
+	},
+	"Function_Detail_HideTabs_B": {
+		"message": "Eine weitere Ausnahme macht diese Webextension auch bei Tabs, die ein Audiosignal liefern. Angeheftete Tabs können zwar nicht ausgeblendet werden, doch diese Erweiterung entlädt deren Inhalt, um auch hier Ressourcen zu schonen. Wenn Sie die Auto-Hide-Funktion aktivieren, werden Tabs verborgen, falls diese nicht in einem festgelegtem Zeitraum benutzt wurden. Diese Zeitspanne können Sie in den Optionen bestimmen."
+	},
+	"Function_Detail_HideTabs_C": {
+		"message": "Hinweis: Bitte beachten Sie, dass sich Tabs nur verbergen lassen, wenn Sie Firefox ab Version 61 nutzen. Für Version 60 muss noch folgende Einstellung auf den Wert \"true\" geändert werden:"
+	},
+	"H_Symbols": {
+		"message": "Listen-Symbole"
+	},
+	"Symbols_A": {
+		"message": "In der Liste werden einige Symbole verwendet, die folgende Bedeutung besitzen:"
+	},
+	"Symbols_B": {
+		"message": "- Angehefteter Tab"
+	},
+	"Symbols_C": {
+		"message": "- Tab mit entladenem Inhalt"
+	},
+	"Symbols_D": {
+		"message": "- Verborgener Tab"
+	},
+	"Symbols_E": {
+		"message": "- Standard-Symbol für Tabs, die z.B. keine eigenes Icon besitzen"
+	},
+	"Tab": {
+		"message": "Tab"
+	},
+	"Tabs": {
+		"message": "Tabs"
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"": {
+		"message": ""
+	},
+	"H_shortcuts": {
+		"message": "Tastenkombinationen"
+	},
+	"shortcuts_A": {
+		"message": "Mit dieser Tastenkombination lässt sich die Sidebar ein- und ausblenden."
+	},
+	"shortcuts_B": {
+		"message": "Mit dieser Tastenkombination lässt sich das Popup ein- und ausblenden."
+	},
+	"Permissions_txt": {
+		"message": "benötigt einige Berechtigungen, um funktionieren zu können. Der Autor der Extension versichert Ihnen, dass nur die wirklich notwendigen Berechtigungen angefordert werden."
+	},
+	"Permissions_link": {
+		"message": "Erfahren Sie mehr über Berechtigungen"
+	}
+}
