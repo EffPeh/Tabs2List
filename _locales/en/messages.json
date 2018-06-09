@@ -5,9 +5,6 @@
 	"extension_description": {
 		"message": "Creates a list of the tabs in the sidebar and as a popup."
 	},
-	"Tabs": {
-		"message": "Tabs"
-	},
 	"Chronic": {
 		"message": "History"
 	},
@@ -92,30 +89,6 @@
 	"OP_theme_dark": {
 		"message": "Dark Theme"
 	},
-	"OP_theme_seaweed": {
-		"message": "Seaweed"
-	},
-	"OP_theme_olive": {
-		"message": "Olive"
-	},
-	"OP_theme_sepia": {
-		"message": "Sepia"
-	},
-	"OP_theme_winter": {
-		"message": "Winter"
-	},
-	"OP_theme_pastel_morning": {
-		"message": "Pastel Morning"
-	},
-	"OP_theme_green_valley": {
-		"message": "Green Valley"
-	},
-	"OP_theme_rotten_orange": {
-		"message": "Rotten Orange"
-	},
-	"OP_theme_camp": {
-		"message": "Camp Firefox"
-	},
 	"OP_ListDisplay": {
 		"message": "List entries"
 	},
@@ -144,7 +117,7 @@
 		"message": "About this extension"
 	},
 	"H_Features": {
-		"message": "Functions"
+		"message": "Features"
 	},
 	"H_Permissions": {
 		"message": "Permissions"
@@ -225,7 +198,7 @@
 		"message": "Another exception will also be made for tabs that provide an audio signal. Although pinned tabs cannot be hidden, this extension unloads their contents to preserve resources. If you activate the Auto-Hide function, tabs are hidden if they have not been used in a specified time period. You can specify this time interval in the options."
 	},
 	"Function_Detail_HideTabs_C": {
-		"message": "HHint: Please note that tabs can only be hidden if you are using Firefox version 61 or higher. For version 60, the following setting must first be changed to the value \"true\":"
+		"message": "Note: Please note that tabs can only be hidden if you are using Firefox version 61 or higher. For version 60, the following setting must first be changed to the value \"true\":"
 	},
 	"H_Symbols": {
 		"message": "List Symbols"
@@ -245,61 +218,52 @@
 	"Symbols_E": {
 		"message": "- Standard symbol for tabs that do not have their own icon, for example"
 	},
+	"Tab_zero": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_one": {
+		"message": "Tab",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_two": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_few": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_many": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_other": {
+		"message": "Tabs",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
 	"Tab": {
 		"message": "Tab"
 	},
 	"Tabs": {
 		"message": "Tabs"
 	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
 	"H_shortcuts": {
 		"message": "Keyboard shortcuts"
 	},
 	"shortcuts_A": {
-		"message": "With these key combinations you can show and hide the sidebar."
+		"message": "With this keyboard shortcut you can show and hide the sidebar."
 	},
 	"shortcuts_B": {
-		"message": "With these key combinations you can show and hide the popup."
+		"message": "With this keyboard shortcut you can show and hide the popup."
 	},
 	"Permissions_txt": {
 		"message": "needs some permissions to be able to work. The author of the extension assures you that only the really necessary authorizations are requested."
 	},
 	"Permissions_link": {
 		"message": "Learn more about permissions"
+	},
+	"OP_in": {
+		"message": "in"
 	}
 }
