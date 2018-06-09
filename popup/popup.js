@@ -26,11 +26,16 @@ const listSearchWrap = document.getElementById( 'list-search-wrap' );
 const listSearch = document.getElementById( 'list-search' );
 
 /* Vars for Auto Hide Function */
-var setAutoHide;
-var autoHideActive = 0;
+let autoHideActive = 0;
 
 /* Var for Search Function */
-var SearchOn = 0;
+let SearchOn = 0;
+
+/* Var for Popup close */
+let clicks = -1;
+
+/* Delay value for setTimeout in updateList() */
+let delay = 250;
 
 /*******************************************************************************/
 
@@ -87,11 +92,10 @@ const tabs2list = {
 
 			let tabsLength = tabs.length;
 
-			if( tabsLength < 2 ) {
-				tabsCount.textContent = ' (' + tabsLength + ' ' + browser.i18n.getMessage('Tab') + ')';
-			} else {
-				tabsCount.textContent = ' (' + tabsLength + ' ' + browser.i18n.getMessage('Tabs') + ')';
-			}
+			let rule = new Intl.PluralRules( locale ).select( tabsLength );
+			let tabsNum = browser.i18n.getMessage('Tab_'+(rule));
+
+			tabsCount.textContent = ' (' + tabsLength + ' ' + tabsNum + ')';
 
 			let currentTabs = document.createDocumentFragment();
 			tabsList.textContent = '';
@@ -100,7 +104,7 @@ const tabs2list = {
 				let li = document.createElement('li');
 
 				let tabLink = document.createElement( 'div' );
-				tabLink.innerHTML = tabs2list.html_encode(tab.title) || tab.id;
+				tabLink.textContent = tabs2list.html_encode(tab.title) || tab.id;
 				tabLink.setAttribute( 'data-id' , tab.id );
 				tabLink.setAttribute( 'title' , tab.url );
 				tabLink.classList.add( 'switch-tabs' );
@@ -199,12 +203,13 @@ const tabs2list = {
 
 /* Update tab list */
 /**/updateList() {		
-		setTimeout( tabs2list.listTabs , 400 );
+		// https://bugzilla.mozilla.org/show_bug.cgi?id=1396758 
+		setTimeout( tabs2list.listTabs , delay );
 	},
 
 /* Helper function to create chronicle list */
 /**/sessionList() {
-		var gettingSessions = browser.sessions.getRecentlyClosed({
+		let gettingSessions = browser.sessions.getRecentlyClosed({
 			maxResults: tabs2list.maxHistory
 		});
 		gettingSessions.then( tabs2list.listMostRecent );
@@ -278,7 +283,7 @@ const tabs2list = {
 		tabs2list.getCurrentWindowTabs().then( ( tabs ) => {
 			let autoInterval = tabs2list.autoInterval * 60000;
 			let currentTime = Date.now();
-			for( var tab of tabs ) {
+			for( let tab of tabs ) {
 				let dif = currentTime - tab.lastAccessed;
 				if ( (dif > autoInterval) && !tab.active && !tab.hidden && !tab.audible ) {
 					browser.tabs.discard( tab.id );
@@ -306,7 +311,7 @@ browser.sessions.onChanged.addListener( tabs2list.sessionList );
 browser.storage.onChanged.addListener( tabs2list.init );
 
 /* Close Popup */
-var clicks = -1;
+
 function closePopup() {
 	clicks++;
 	if( clicks < 1 ) {
@@ -316,7 +321,7 @@ function closePopup() {
 
 /* Click events ****************************************************************/
 document.addEventListener( 'click' , (e) => {
-	var dataID = +e.target.getAttribute( 'data-id' );
+	let dataID = +e.target.getAttribute( 'data-id' );
 	// Activate Tab
 /**/if( e.target.classList.contains( 'switch-tabs' ) ) {
 		browser.tabs.update( dataID , { active: true });
@@ -338,9 +343,9 @@ document.addEventListener( 'click' , (e) => {
 	}
 	// Pin Button
 /**/if( e.target.classList.contains( 'button-pin' ) ) {
-		var querying = browser.tabs.query( { currentWindow: true } );
+		let querying = browser.tabs.query( { currentWindow: true } );
 		querying.then( ( tabs ) => {
-			var gettingInfo = browser.tabs.get( dataID );
+			let gettingInfo = browser.tabs.get( dataID );
 			gettingInfo.then( ( tab ) => {				
 				if( tab.pinned ) {
 					browser.tabs.update( dataID, { pinned: false } );
@@ -355,7 +360,7 @@ document.addEventListener( 'click' , (e) => {
 	// Hide all tabs (if possible)
 /**/if( e.target.id == 'hide-all-tabs' ) {
 		tabs2list.getCurrentWindowTabs().then( ( tabs ) => {
-			for( var tab of tabs ) {
+			for( let tab of tabs ) {
 				if ( !tab.audible ) {
 					browser.tabs.discard( tab.id );
 					browser.tabs.hide( tab.id );
@@ -366,7 +371,7 @@ document.addEventListener( 'click' , (e) => {
 	// Auto-Hide
 /**/if( e.target.id == 'auto-hide' ) {
 		if( autoHideActive == 0 ) {
-			setAutoHide = setInterval( tabs2list.autoHide , 60000 );
+			const setAutoHide = setInterval( tabs2list.autoHide , 60000 );
 			autoHideActive = 1;
 			e.target.classList.add( 'auto-hide-active' );
 		} else {
@@ -410,7 +415,7 @@ document.addEventListener( 'click' , (e) => {
 		});
 	}
 
-	var historyID = e.target.getAttribute( 'data-id' );
+	let historyID = e.target.getAttribute( 'data-id' );
 	
 	// Restore Button
 /**/if( e.target.classList.contains( 'restore-history' ) ) {		
@@ -491,6 +496,6 @@ window.addEventListener( 'DOMContentLoaded' , tabs2list.init );
 /*******************************************************************************/
 //console.log(  );
 /*
-invisibleToDebugger ?
-Das Components-Objekt sollte nicht mehr verwendet werden. Es wird bald entfernt.
+
 */
+
