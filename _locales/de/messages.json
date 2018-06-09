@@ -5,9 +5,6 @@
 	"extension_description": {
 		"message": "Erzeugt eine Liste der Tabs in der Sidebar und als PopUp."
 	},
-	"Tabs": {
-		"message": "Tabs"
-	},
 	"Chronic": {
 		"message": "Chronik"
 	},
@@ -91,30 +88,6 @@
 	},
 	"OP_theme_dark": {
 		"message": "Dunkles Thema"
-	},
-	"OP_theme_seaweed": {
-		"message": "Seaweed"
-	},
-	"OP_theme_olive": {
-		"message": "Olive"
-	},
-	"OP_theme_sepia": {
-		"message": "Sepia"
-	},
-	"OP_theme_winter": {
-		"message": "Winter"
-	},
-	"OP_theme_pastel_morning": {
-		"message": "Pastel Morning"
-	},
-	"OP_theme_green_valley": {
-		"message": "Green Valley"
-	},
-	"OP_theme_rotten_orange": {
-		"message": "Rotten Orange"
-	},
-	"OP_theme_camp": {
-		"message": "Camp Firefox"
 	},
 	"OP_ListDisplay": {
 		"message": "Listeneinträge"
@@ -245,41 +218,35 @@
 	"Symbols_E": {
 		"message": "- Standard-Symbol für Tabs, die z.B. keine eigenes Icon besitzen"
 	},
+	"Tab_zero": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_one": {
+		"message": "Tab",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_two": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_few": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_many": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_other": {
+		"message": "Tabs",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
 	"Tab": {
 		"message": "Tab"
 	},
 	"Tabs": {
 		"message": "Tabs"
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
-	},
-	"": {
-		"message": ""
 	},
 	"H_shortcuts": {
 		"message": "Tastenkombinationen"
@@ -295,5 +262,8 @@
 	},
 	"Permissions_link": {
 		"message": "Erfahren Sie mehr über Berechtigungen"
+	},
+	"OP_in": {
+		"message": "in"
 	}
 }
