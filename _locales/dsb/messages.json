@@ -132,7 +132,7 @@
 		"message": "Licencěrowane pód "
 	},
 	"PH_Search": {
-		"message": "Rajtarki pytać"
+		"message": "Rejtark pytaś"
 	},
 	"About_A": {
 		"message": "Móžośo toś to rozšyrjenje wužywaś, aby swóje rejtarki ako lisćinu w bocnicy a/abo wuskokujucem woknje pokazał. Drugi naglěd njedawno zacynjone rejtarki nalicujo. Mimo wšakich standardnych funkcijow, daju se rejtarki w rejtarkowej rědce manuelnje abo awtomatisce schowaś. To pomaga, resurse wužywane psez wobglědowak reducěrowas, a bitujo lěpšy pśeglěd w rejtarkowej rědce. Schowane rejtarki su hyšći widobne a ned pśistupne w lisćinje."
@@ -219,19 +219,19 @@
 		"message": "- Standardny symbol za rejtarki, kótarež swójskego symbola njamaju, na pśikład"
 	},
 	"Tab_zero": {
-		"message": "",
+		"message": "rejtarkow",
 		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
 	},
 	"Tab_one": {
-		"message": "rajtark",
+		"message": "rejtark",
 		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
 	},
 	"Tab_two": {
-		"message": "rajtarkaj",
+		"message": "rejtarka",
 		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
 	},
 	"Tab_few": {
-		"message": "rajtarki",
+		"message": "rejtarki",
 		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
 	},
 	"Tab_many": {
@@ -239,7 +239,7 @@
 		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
 	},
 	"Tab_other": {
-		"message": "rajtarkow",
+		"message": "rejtarkow",
 		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
 	},
 	"Tab": {

@@ -219,7 +219,7 @@
 		"message": "- Standardny symbol za rajtarki, kotrež swójski symbol nimaja, na přikład"
 	},
 	"Tab_zero": {
-		"message": "",
+		"message": "rajtarkow",
 		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
 	},
 	"Tab_one": {
