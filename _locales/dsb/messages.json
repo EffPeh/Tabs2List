@@ -1,0 +1,269 @@
+{
+	"extension_name": {
+		"message": "Tabs2List"
+	},
+	"extension_description": {
+		"message": "Napórajo lisćinu rejtarkow w bocnicy a ako wuskokujuce wokno."
+	},
+	"Chronic": {
+		"message": "Njedawno zacynjone"
+	},
+	"TabsList": {
+		"message": "Lisćina rejtarkow"
+	},
+	"History": {
+		"message": "Njedawno zacynjone rejtarki"
+	},
+	"LastVisit": {
+		"message": "Slědny woglěd"
+	},
+	"Untitled": {
+		"message": "Bźez mjenja"
+	},
+	"NewTab": {
+		"message": "Nowy rejtark wócyniś (Strg+T)"
+	},
+	"HideAllTabs": {
+		"message": "Wšykne rejtarki w rejtarkowej rědce schowaś"
+	},
+	"DelHistory": {
+		"message": "Lisćinu wšych njedawno zacynjonych rejtarkow wuprozniś"
+	},
+	"Options": {
+		"message": "Nastajenja"
+	},
+	"OP_Headline_Options": {
+		"message": "Nastajenja"
+	},
+	"H_Info": {
+		"message": "Informacije"
+	},	
+	"OP_maxHistory": {
+		"message": "Maksimalna licba njedawno zacynjonych rejtarkow"
+	},
+	"OP_link_about": {
+		"message": "https://support.mozilla.org/en-US/kb/about-config-editor-firefox"
+	},
+	"OP_link_license": {
+		"message": "https://creativecommons.org/licenses/by/3.0/deed.en"
+	},	
+	"hideTab": {
+		"message": "Toś ten rejtark w rejtarkowej rědce schowaś"
+	},
+	"closeTab": {
+		"message": "Toś ten rejtark zacyniś"
+	},
+	"reloadTab": {
+		"message": "Toś ten rejtark znowego zacytaś"
+	},
+	"pinTab": {
+		"message": "Toś ten rejtark pśipěś abo wótpěś"
+	},
+	"closeSession": {
+		"message": "Toś ten rejtark zacynis"
+	},
+	"Export": {
+		"message": "Lisćinu ako HTML abo CSV´eksportěrowaś"
+	},
+	"exportHTML": {
+		"message": "Ako HTML eksportěrowaś"
+	},
+	"exportCSV": {
+		"message": "Ako CSV eksportěrowaś"
+	},
+	"OP_Options": {
+		"message": "Nastajenja"
+	},
+	"OP_Infos": {
+		"message": "Informacije"
+	},
+	"OP_ColorScheme": {
+		"message": "Barwowa šema"
+	},
+	"OP_ColorScheme_txt": {
+		"message": "How móžośo barwowu šemu wubraś."
+	},
+	"OP_theme_light": {
+		"message": "Swětła drastwa"
+	},
+	"OP_theme_dark": {
+		"message": "Śěmna drastwa"
+	},
+	"OP_ListDisplay": {
+		"message": "Lisćinowe zapiski"
+	},
+	"OP_ListDisplay_txt": {
+		"message": "Pó standarźe se titele lisćinowych zapiskow łamaju, jolic tekst jo pśedłujki. Zmóžniśo toś to nastajenje, jolic cośo jadnosmužkowy naglěd."
+	},
+	"OP_ListFontSize": {
+		"message": "Pismowa wjelikosć"
+	},
+	"OP_ListFontSize_txt": {
+		"message": "How móžośo wjelikosć pisma za lisćinowe zapiski definěrowaś."
+	},
+	"OP_maxHistory_txt": {
+		"message": "Napšawdna maksimalna licba wót definěrowaneje klucoweje gódnoty wótwisujo "
+	},
+	"AutoHide": {
+		"message": "Inaktiwne rejtarki awtomatiski schowaś"
+	},
+	"OP_AutoInterval": {
+		"message": "Rejtarki awtomatiski schowaś"
+	},
+	"OP_AutoInterval_txt": {
+		"message": "How móžośo cas (w minutach) definěrowaś, pó kótaremž so maju inaktiwne rejtarki schowaś, jolic awtomatiske chowanje jo zmóžnjone."
+	},
+	"H_About": {
+		"message": "Wó toś tom rozšyrjenju"
+	},
+	"H_Features": {
+		"message": "Funkcije"
+	},
+	"H_Permissions": {
+		"message": "Pšawa"
+	},
+	"H_Attribution": {
+		"message": "Atribucija"
+	},
+	"Attribution_IconsBy": {
+		"message": "Někotare (změnjone) symbole wót"
+	},
+	"Attribution_License": {
+		"message": "Licencěrowane pód "
+	},
+	"PH_Search": {
+		"message": "Rajtarki pytać"
+	},
+	"About_A": {
+		"message": "Móžośo toś to rozšyrjenje wužywaś, aby swóje rejtarki ako lisćinu w bocnicy a/abo wuskokujucem woknje pokazał. Drugi naglěd njedawno zacynjone rejtarki nalicujo. Mimo wšakich standardnych funkcijow, daju se rejtarki w rejtarkowej rědce manuelnje abo awtomatisce schowaś. To pomaga, resurse wužywane psez wobglědowak reducěrowas, a bitujo lěpšy pśeglěd w rejtarkowej rědce. Schowane rejtarki su hyšći widobne a ned pśistupne w lisćinje."
+	},
+	"Features_A": {
+		"message": "staja někotare funkcije k dispoziciji, kótarež daju se pśez kliknjenje na symbole zmóžniś. Jich symbole se how krotko rozjasnjuju:"
+	},
+	"Features_create": {
+		"message": "- Nowy rejtark wócyniś."
+	},
+	"Features_close": {
+		"message": "- Rejtark se zacynijo."
+	},
+	"Features_pin": {
+		"message": "- Rejtark se pśipina abo wótpina, wótwisujucy wót jogo aktualnego statusa."
+	},
+	"Features_reload": {
+		"message": "- Aktiwny rejtark se znowego zacytajo."
+	},
+	"Features_hide": {
+		"message": "- Rejtark se schowajo."
+	},
+	"Features_hideAll": {
+		"message": "- Wšykne rejtarki se schowaju, jolic móžno."
+	},
+	"Features_export": {
+		"message": "- Toś ta funkcija wam zmóžnja, aktualnu rejtarkowu lisćinu ako HTML abo CSV eksportěrowaś."
+	},
+	"Features_autoHide": {
+		"message": "- Zmóžnja abo znjemóžnja funkciju Awtomatiski schowaś."
+	},
+	"Features_search": {
+		"message": "- Zmóžnja abo znjemóžnja pytańsku funkciju."
+	},
+	"Features_deleteHistory": {
+		"message": "- Lisćina wšych njedawno zacynjonych rejtarkow se wulašuju."
+	},
+	"Features_options": {
+		"message": "- Wócynja bok nastajenjow."
+	},
+	"H_Function_Detail": {
+		"message": "Drobnostki"
+	},
+	"Function_H_Detail_HideTabs": {
+		"message": "Rejtarki schowaś"
+	},
+	"Function_Detail_HideTabs_A": {
+		"message": "wam zmóžnja, jadnotliwe abo wšykne rejtarki manuelnje abo awtomatiski schowaś. Su pak wěste wobgranicowanja. Slědujuce rejtarki njedaju se schowaś:"
+	},
+	"HideTabs_Restriction_A": {
+		"message": "Pśipěte rejtarki"
+	},
+	"HideTabs_Restriction_B": {
+		"message": "Rejtarki, kótarež jich wobrazowku, mikrofon abo kameru źěle"
+	},
+	"HideTabs_Restriction_C": {
+		"message": "Aktualny aktiwny rejtark"
+	},
+	"HideTabs_Restriction_D": {
+		"message": "Rejtarki, kótarež se rowno zacynjaju"
+	},
+	"Function_Detail_HideTabs_B": {
+		"message": "Dalšne wuwześe je za rejtarki, kótarež awdiosignal k dispoziciji stajaju. Lěcrownož pśipěte rejtarki njedaju se schowaś, rozšyrjenje jich wopśimjeśe prozni, aby resurse žariło. Jolic funkciju Awtomatiski schowaś zmóžnijośo, se rejtarki schowaju, jolic se w běgu wěstego casa njewužywaju. Móžośo toś ten casowy interwal w nastajenjach nastajiś."
+	},
+	"Function_Detail_HideTabs_C": {
+		"message": "Glědajśo: Pšosym źiwajśo na to, až rejtarki daju se jano schowaś, jolic Firefox wersiju 61 abo wušu wužywaśo. Za wersiju 60 musy se nejpjerwjej slědujuce nastajenje na gódnotu  \"true\" stajiś:"
+	},
+	"H_Symbols": {
+		"message": "Lisćinowe symbole"
+	},
+	"Symbols_A": {
+		"message": "Někotare symbole ze slědujucym wóznamom se w lisćinje wužywaju:"
+	},
+	"Symbols_B": {
+		"message": "- Pśipěty rejtark"
+	},
+	"Symbols_C": {
+		"message": "- Rejtark ze zachyśonym wopśimjeśim"
+	},
+	"Symbols_D": {
+		"message": "- Schowany rejtark"
+	},
+	"Symbols_E": {
+		"message": "- Standardny symbol za rejtarki, kótarež swójskego symbola njamaju, na pśikład"
+	},
+	"Tab_zero": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_one": {
+		"message": "rajtark",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_two": {
+		"message": "rajtarkaj",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_few": {
+		"message": "rajtarki",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_many": {
+		"message": "",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab_other": {
+		"message": "rajtarkow",
+		"description": "LOCALIZATION NOTE: Please specify the correct plural form for this category. If this plural form is not used in your language, leave the string empty. You need not translate this string. More info: http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html"
+	},
+	"Tab": {
+		"message": "Rejtark"
+	},
+	"Tabs": {
+		"message": "Rejtarki"
+	},
+	"H_shortcuts": {
+		"message": "Tastowe skrótšenki"
+	},
+	"shortcuts_A": {
+		"message": "Z toś teju tastoweju skrotconku móžośo bocnicu pokazaś a schowaś."
+	},
+	"shortcuts_B": {
+		"message": "Z toś teju tastoweju skrotconku móžośo wuskokujuce wokno pokazaś a schowaś."
+	},
+	"Permissions_txt": {
+		"message": "pomina se někotare pšawa, aby funkcioněrowało. Awtor rozšyrjenja wam zawěsćujo, až se jano napšawdu trěbne awtorizacije pominaju."
+	},
+	"Permissions_link": {
+		"message": "Dalšne informacije wó pšawach"
+	},
+	"OP_in": {
+		"message": "w"
+	}
+}
