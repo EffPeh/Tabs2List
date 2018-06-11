@@ -27,6 +27,7 @@ const listSearch = document.getElementById( 'list-search' );
 
 /* Vars for Auto Hide Function */
 let autoHideActive = 0;
+let setAutoHide;
 
 /* Var for Search Function */
 let SearchOn = 0;
@@ -371,7 +372,7 @@ document.addEventListener( 'click' , (e) => {
 	// Auto-Hide
 /**/if( e.target.id == 'auto-hide' ) {
 		if( autoHideActive == 0 ) {
-			const setAutoHide = setInterval( tabs2list.autoHide , 60000 );
+			setAutoHide = setInterval( tabs2list.autoHide , 60000 );
 			autoHideActive = 1;
 			e.target.classList.add( 'auto-hide-active' );
 		} else {
