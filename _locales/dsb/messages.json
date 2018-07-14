@@ -265,5 +265,35 @@
 	},
 	"OP_in": {
 		"message": "w"
+	},
+	"OP_PopupWidth": {
+		"message": "Šyrokosć wuskokujucego wokna"
+	},
+	"OP_PopupWidth_txt": {
+		"message": "How móžośo šyrokosć wuskokujucego wokna nastajiś."
+	},
+	"OP_SearchOn": {
+		"message": "Pytańska funkcija"
+	},
+	"OP_SearchOn_txt": {
+		"message": "Pytańska funkcija ma se južo pśi startowanju wócyniś."
+	},
+	"audioTab": {
+		"message": "Rejtark nimy abo głosny cyniś"
+	},
+	"HiddenTabs": {
+		"message": "Schowane"
+	},
+	"TabsHidden": {
+		"message": "Schowane rejtarki"
+	},
+	"OP_HiddenTabsList": {
+		"message": "Schowane rejtarki"
+	},
+	"OP_HiddenTabsList_txt": {
+		"message": "Schowane rejtarki w pśidatnej lisćinje pokazaś."
+	},
+	"Symbols_F": {
+		"message": "- Rejtark z awditiwnym medijowym wopśimjeśim"
 	}
 }

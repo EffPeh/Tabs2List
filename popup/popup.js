@@ -17,13 +17,20 @@ const locale = browser.i18n.getUILanguage();
 /* HTML Elements */
 const tabsList = document.getElementById( 'tabs-list' );
 const tabsHistory = document.getElementById( 'tabs-history' );
+const tabsHidden = document.getElementById( 'tabs-hidden' );
+
 const autoHideBtn = document.getElementById( 'auto-hide' );
 const linkCSS = document.getElementsByTagName( 'link' );
 const tabsCount = document.getElementById( 'tabs-count' );
+const tabsHiddenCount = document.getElementById( 'tabs-hidden-count' );
 
 const searchTabs = document.getElementById( 'search-tabs' );
 const listSearchWrap = document.getElementById( 'list-search-wrap' );
 const listSearch = document.getElementById( 'list-search' );
+const dynamicCSS = document.getElementById( 'dynamic-css' );
+
+const buttonTabs = document.getElementById( 'button-tabs' );
+const buttonHidden = document.getElementById( 'button-hidden' );
 
 /* Vars for Auto Hide Function */
 let autoHideActive = 0;
@@ -33,16 +40,23 @@ let setAutoHide;
 let SearchOn = 0;
 
 /* Var for Popup close */
-let clicks = -1;
+let popup = 0;
 
 /* Delay value for setTimeout in updateList() */
-let delay = 250;
+let delay = 300;
+
+/* FavIcon Container */
+let favIcons = {};
 
 /*******************************************************************************/
 
 const tabs2list = {
 /* Init , Get Options */
 /**/init() {
+		if( dynamicCSS ) {
+			popup++;
+		}
+
 		const getSettings = {
 			async load() {
 				const option = await browser.storage.local.get({
@@ -50,22 +64,47 @@ const tabs2list = {
 					theme: 'light-theme',
 					noWrap: false,
 					autoInterval: 5,
-					fSize: 8
+					fSize: 8,
+					optionPopupWidth: 300,
+					optionSearchOn: false,
+					optionHiddenTabsList: false
 				});
 				tabs2list.maxHistory = +option.maxHistory;
 				tabs2list.CSS = option.theme + '.css';
 				tabs2list.noWrap = option.noWrap;
 				tabs2list.autoInterval = +option.autoInterval;
 				tabs2list.fSize = +option.fSize + 'pt';
+				tabs2list.optionPopupWidthMin = +option.optionPopupWidth;
+				tabs2list.optionPopupWidthMax = +option.optionPopupWidth + 17;
+				tabs2list.optionSearchOn = option.optionSearchOn;
+				tabs2list.ShowHiddenList = option.optionHiddenTabsList;
+
+				/* Popup Width */
+				if( dynamicCSS ) {
+					//dynamicCSS.textContent = 'body { min-width: ' + tabs2list.optionPopupWidthMin + 'px; max-width: ' + tabs2list.optionPopupWidthMax + 'px; }';
+					dynamicCSS.textContent = 'body { min-width: ' + tabs2list.optionPopupWidthMax + 'px; max-width: ' + tabs2list.optionPopupWidthMax + 'px; overflow-y: scroll; }';
+				}
+
+				if( option.optionSearchOn == true ) {
+					searchTabs.click();
+				}				
+				if( tabs2list.ShowHiddenList == true ) {
+					buttonHidden.classList.remove( 'list-hide' );
+				} else {
+					if( !buttonHidden.classList.contains( 'switch-tabs' ) ) {
+						buttonHidden.classList.add( 'list-hide' );
+					}
+				}
+				
 			}
 		};
 		let o = getSettings.load();
 		o.then( () => {
 			tabs2list.go4it();
-		} );
+		});
 	},
 
-/* Set href to themes */	
+/* Set theme CSS */	
 /**/go4it() {		
 		linkCSS[0].setAttribute( 'href' , tabs2list.CSS );
 		tabs2list.listTabs();
@@ -74,7 +113,7 @@ const tabs2list = {
 
 /* Helper function to replace HTML chars in tab titles */
 /**/html_encode(string) {
-		return string.replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+		return string.replace(/>/g, "&gt;").replace(/</g, "&lt;");//.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
 	},
 
 /* Helper function to create tab list */
@@ -83,23 +122,21 @@ const tabs2list = {
 	},
 
 /* Create tab list */
-/**/listTabs() {		
-		//tabs2list.getStorage();
+/**/listTabs() {
 		tabs2list.getCurrentWindowTabs().then( ( tabs ) => {
 
+			// Sort Tabs
 			tabs.sort( function( a , b ) { return a.hidden - b.hidden } );
 			tabs.sort( function( a , b ) { return a.discarded - b.discarded } );
 			tabs.sort( function( a , b ) { return b.pinned - a.pinned } );
 
 			let tabsLength = tabs.length;
-
-			let rule = new Intl.PluralRules( locale ).select( tabsLength );
-			let tabsNum = browser.i18n.getMessage('Tab_'+(rule));
-
-			tabsCount.textContent = ' (' + tabsLength + ' ' + tabsNum + ')';
+			let tabsHiddenLength = 0;
 
 			let currentTabs = document.createDocumentFragment();
+			let currentTabsHidden = document.createDocumentFragment();
 			tabsList.textContent = '';
+			tabsHidden.textContent = '';
 			for(let tab of tabs) {
 				let fragment_LI = document.createDocumentFragment();
 				let li = document.createElement('li');
@@ -116,7 +153,7 @@ const tabs2list = {
 					tabLink.classList.add( 'no-wrap' );
 				}
 
-				let favIconURL = tab.favIconUrl;
+				let favIconURL = tab.favIconUrl || favIcons[tab.id];
 				if( favIconURL && favIconURL != '' && favIconURL.indexOf( 'chrome://' ) == -1 ) {
 					tabLink.style.backgroundImage = 'url("' + favIconURL + '")';
 				} else {
@@ -124,54 +161,96 @@ const tabs2list = {
 				}
 
 				if( tab.active ) { 
-					tabLink.classList.add( 'active' );
+					li.classList.add( 'active' );
 				}
-				if( tab.discarded ) {
-					tabLink.classList.add( 'discarded' );
-				}	
+				// Mark Discarded Tab
+				if( tab.discarded && !tab.hidden ) {
+					li.classList.add( 'discarded' );
+					let discardedIcon = document.createElement('span');
+					discardedIcon.classList.add( 'discardedIcon' );
+					tabLink.appendChild( discardedIcon );
+				}
+				// Mark Hidden Tab
 				if( tab.hidden ) {
-					tabLink.classList.add( 'hidden' );
-				}				
+					li.classList.add( 'hidden' );
+					let hiddenIcon = document.createElement('span');
+					hiddenIcon.classList.add( 'hiddenIcon' );
+					tabLink.appendChild( hiddenIcon );
+				}
+				// Mark Pinned Tab
 				if( tab.pinned ) {
 					li.classList.add( 'pinned' );
+					let pinnedIcon = document.createElement('span');
+					pinnedIcon.classList.add( 'pinnedIcon' );
+					tabLink.appendChild( pinnedIcon );
+				}
+		
+				// Mark Audible Tab
+				let audibleIcon = document.createElement('span');
+				if( tab.mutedInfo.muted ) {					
+					audibleIcon.classList.add( 'audibleIconOff' );
+					tabLink.appendChild( audibleIcon );
+				}
+				if( !tab.mutedInfo.muted && tab.audible  ) {
+					audibleIcon.classList.add( 'audibleIcon' );
+					tabLink.appendChild( audibleIcon );
 				}
 
+				// Function PopUp
 				let fragment_popup = document.createDocumentFragment();				
 
 				let fragment_popupWrap = document.createDocumentFragment();
 				let popupWrap = document.createElement('div');
 				popupWrap.classList.add( 'popupWrap' );
 
+				// Hide Button
 				let btnHide = document.createElement( 'span' );
 				btnHide.classList.add( 'btn' , 'button-hide' );
 				btnHide.setAttribute( 'data-id' , tab.id );
 				btnHide.setAttribute( 'title' , browser.i18n.getMessage('hideTab') );
 
+				// Close Button
 				let btnClose = document.createElement( 'span' );
 				btnClose.classList.add( 'btn' , 'button-close' );
 				btnClose.setAttribute( 'data-id' , tab.id );
 				btnClose.setAttribute( 'title' , browser.i18n.getMessage('closeTab') );
 
+				// Pin Button
 				let btnPin = document.createElement( 'span' );
 				btnPin.classList.add( 'btn' , 'button-pin' );
 				btnPin.setAttribute( 'data-id' , tab.id );
 				btnPin.setAttribute( 'title' , browser.i18n.getMessage('pinTab') );
+				
+				// Audio Button
+				let btnAudio = document.createElement( 'span' );
+				btnAudio.classList.add( 'btn' , 'button-audio' );
+				btnAudio.setAttribute( 'data-id' , tab.id );
+				btnAudio.setAttribute( 'title' , browser.i18n.getMessage('audioTab') );
 
+				// Reload Button
 				let btnReload = document.createElement( 'span' );
 				btnReload.classList.add( 'btn' , 'button-reload' );
 				btnReload.setAttribute( 'data-id' , tab.id );
 				btnReload.setAttribute( 'title' , browser.i18n.getMessage('reloadTab') );
 
-				fragment_popup.appendChild( btnClose );
-				fragment_popup.appendChild( btnPin );
+				
+				// Muted?
+				if( tab.mutedInfo.muted || tab.audible ) {
+					if( tab.mutedInfo.muted ) {
+						btnAudio.classList.add( 'button-audio-off' );
+					}
+					fragment_popup.appendChild( btnAudio );
+				}
 
+				fragment_popup.appendChild( btnPin );
+				
 				if( !tab.active && !tab.hidden ) {					
 					fragment_popup.appendChild( btnHide );
 				}
 				if( tab.active ) {
 					fragment_popup.appendChild( btnReload );
 				}
-
+				
 				fragment_popup.appendChild( btnClose );
 
 				popupWrap.appendChild( fragment_popup );
@@ -187,19 +266,40 @@ const tabs2list = {
 					if( title.indexOf( search ) != -1 ) {
 						currentTabs.appendChild( fragment_LI );
 					}
+
+					buttonHidden.classList.add( 'list-hide' );
 				} else {
-					currentTabs.appendChild( fragment_LI );
+					if( tabs2list.ShowHiddenList == true ) {
+						buttonHidden.classList.remove( 'list-hide' );
+
+						if( tab.hidden ) {
+							currentTabsHidden.appendChild( fragment_LI );
+							tabsHiddenLength++;
+						} else {
+							currentTabs.appendChild( fragment_LI );
+						}
+					} else {
+						currentTabs.appendChild( fragment_LI );
+					}
 				}
 			}
 			
-			tabsList.appendChild( currentTabs );
-			
-		}).then( () => {
-			window.top.scrollTo( 0 , 0 );
-			if( !searchTabs.classList.contains( 'search' ) ) {				
-				//searchList();
+			// PluralRules for Tabs Counter
+			if( tabs2list.ShowHiddenList == true ) {
+				tabsLength = tabsLength - tabsHiddenLength;
+				let rule = new Intl.PluralRules( locale ).select( tabsLength );
+				let tabsNum = browser.i18n.getMessage('Tab_'+(rule));
+				tabsHiddenCount.textContent = ' (' + tabsHiddenLength + ' ' + tabsNum + ')';
 			}
+			let rule = new Intl.PluralRules( locale ).select( tabsLength );
+			let tabsNum = browser.i18n.getMessage('Tab_'+(rule));
+			tabsCount.textContent = ' (' + tabsLength + ' ' + tabsNum + ')';
+
+			tabsList.appendChild( currentTabs );
+			tabsHidden.appendChild( currentTabsHidden );
+
 		});
+		
 	},
 
 /* Update tab list */
@@ -287,6 +387,7 @@ const tabs2list = {
 			for( let tab of tabs ) {
 				let dif = currentTime - tab.lastAccessed;
 				if ( (dif > autoInterval) && !tab.active && !tab.hidden && !tab.audible ) {
+					getFav( tab.id );
 					browser.tabs.discard( tab.id );
 					browser.tabs.hide( tab.id );
 				}
@@ -296,6 +397,19 @@ const tabs2list = {
 };
 
 /*******************************************************************************/
+// Get FavIcons
+function getFav( current ) {
+	tabs2list.getCurrentWindowTabs().then( ( tabs ) => {
+		for( let tab of tabs ) {
+			if( tab.id == current && !tab.hidden ) {
+				let favIconURL = tab.favIconUrl;
+				if( favIconURL ) {
+					favIcons[tab.id] = favIconURL;
+				}
+			}
+		}
+	});
+}
 
 /* Tab listener */
 browser.tabs.onRemoved.addListener( tabs2list.updateList );
@@ -304,6 +418,7 @@ browser.tabs.onActivated.addListener( tabs2list.updateList );
 browser.tabs.onMoved.addListener( tabs2list.updateList );
 browser.tabs.onUpdated.addListener( tabs2list.updateList );
 
+browser.tabs.onUpdated.addListener( getFav , { properties: ['hidden'] } );
 
 /* Sessions Listener */
 browser.sessions.onChanged.addListener( tabs2list.sessionList );
@@ -312,10 +427,8 @@ browser.sessions.onChanged.addListener( tabs2list.sessionList );
 browser.storage.onChanged.addListener( tabs2list.init );
 
 /* Close Popup */
-
 function closePopup() {
-	clicks++;
-	if( clicks < 1 ) {
+	if( popup > 0 ) {
 		window.close();
 	}
 }
@@ -326,6 +439,9 @@ document.addEventListener( 'click' , (e) => {
 	// Activate Tab
 /**/if( e.target.classList.contains( 'switch-tabs' ) ) {
 		browser.tabs.update( dataID , { active: true });
+		if( e.target.parentElement.classList.contains( 'hidden' ) ) {
+			buttonTabs.click();
+		}
 		closePopup();
 	}
 	// Close Button
@@ -339,6 +455,7 @@ document.addEventListener( 'click' , (e) => {
 	}
 	// Hide Button
 /**/if( e.target.classList.contains( 'button-hide' ) ) {
+		getFav( dataID );
 		browser.tabs.discard( dataID );
 		browser.tabs.hide( dataID );
 	}
@@ -353,16 +470,32 @@ document.addEventListener( 'click' , (e) => {
 				} else {
 					browser.tabs.update( dataID, { pinned: true } );
 				}
-				
 			});
 		});
 	}
 
+	// Audio Button
+	if( e.target.classList.contains( 'button-audio' ) ) {
+		let querying = browser.tabs.query( { currentWindow: true } );
+		querying.then( ( tabs ) => {
+			let gettingInfo = browser.tabs.get( dataID );
+			gettingInfo.then( ( tab ) => {				
+				let mutedInfo = tab.mutedInfo.muted;
+				if( mutedInfo == true ) {
+					browser.tabs.update( dataID , { 'muted' : false });
+				} else {
+					browser.tabs.update( dataID , { 'muted' : true });
+				}
+			});
+		});
+	}
+	
 	// Hide all tabs (if possible)
 /**/if( e.target.id == 'hide-all-tabs' ) {
 		tabs2list.getCurrentWindowTabs().then( ( tabs ) => {
 			for( let tab of tabs ) {
 				if ( !tab.audible ) {
+					getFav( tab.id );
 					browser.tabs.discard( tab.id );
 					browser.tabs.hide( tab.id );
 				}
@@ -421,6 +554,7 @@ document.addEventListener( 'click' , (e) => {
 	// Restore Button
 /**/if( e.target.classList.contains( 'restore-history' ) ) {		
 		browser.sessions.restore( historyID );
+		buttonTabs.click();
 		closePopup();
 	}
 
@@ -475,12 +609,12 @@ document.querySelectorAll( '.list-tab' ).forEach(
 searchTabs.addEventListener( 'click' , (e) => {
 	e.target.classList.toggle( 'search' );
 	if( e.target.classList.contains( 'search' ) ) {
-		listSearchWrap.style.display = 'none';
+		listSearchWrap.classList.toggle( 'show' );
 		listSearch.value = '';
 		SearchOn = 0;
 		tabs2list.updateList();
 	} else {
-		listSearchWrap.style.display = 'block';
+		listSearchWrap.classList.toggle( 'show' );
 		listSearch.focus();
 	}
 });
@@ -489,6 +623,9 @@ listSearch.addEventListener( 'keyup' , (e) => {
 	SearchOn = 1;
 	tabs2list.updateList();
 });
+
+/*******************************************************************************/
+
 
 /*******************************************************************************/
 

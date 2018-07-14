@@ -265,5 +265,35 @@
 	},
 	"OP_in": {
 		"message": "in"
+	},
+	"OP_PopupWidth": {
+		"message": "Breite des Popups"
+	},
+	"OP_PopupWidth_txt": {
+		"message": "Hier können Sie die Breite des Popup-Fensters bestimmen."
+	},
+	"OP_SearchOn": {
+		"message": "Suchfunktion"
+	},
+	"OP_SearchOn_txt": {
+		"message": "Die Suchfunktion soll bereits beim Start geöffnet sein."
+	},
+	"audioTab": {
+		"message": "Tab stummschalten oder Stummschaltung aufheben"
+	},
+	"HiddenTabs": {
+		"message": "Verborgen"
+	},
+	"TabsHidden": {
+		"message": "Verborgene Tabs"
+	},
+	"OP_HiddenTabsList": {
+		"message": "Verborgene Tabs"
+	},
+	"OP_HiddenTabsList_txt": {
+		"message": "Verborgene Tabs in zusätzlicher Liste anzeigen."
+	},
+	"Symbols_F": {
+		"message": "- Tab mit auditivem Medieninhalt"
 	}
 }

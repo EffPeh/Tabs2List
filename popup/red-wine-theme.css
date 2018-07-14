@@ -1,59 +1,39 @@
 ﻿:root {
-	/* Sidebar > background-color */
-	--color-body-bg: rgb(178, 24, 43);
-	/* All > font color , Tabs > font color, normal */
+	--color-body-bg: rgb(178,24,43);
 	--color-body: rgb(247, 247, 247);
-	/* Page Tabs > color > border-top , border-left , border-right */
 	--color-list-tab: rgb(253, 219, 199);
-	/* Page Toolbar, top > box-shadow = border color */
 	--color-list-toolbar-bs: rgb(253, 219, 199);
-	/*  Page Tabs, inactive > border-bottom-color */
 	--color-list-tab-bb: rgb(253, 219, 199);
-	/* Page Toolbar > border-bottom-color */
-	--color-tabs-toolbar-bb: rgb(103, 0, 31);
-	/* Page Toolbar > background-color */
-	--color-list-toolbar-bg: rgb(178, 24, 43);
-	/* Page Toolbar, Button Bar > background-color */
-	--color-tabs-toolbar-bg: rgb(244, 165, 130);
-	/* Page Tabs, inactive > background-color */
-	--color-list-tab-bg: rgb(232, 140, 115);
-	/* Page Tabs, active/hover > background-color */
-	--color-list-tab-hover-active-bg: rgb(244, 165, 130);
-	/* Page Tabs, active > border-bottom-color */
-	--color-list-tab-active-bb: rgb(244, 165, 130);
-	/* Page Tabs, font color */
-	--color-list-tab-font: rgb(103, 0, 31);
-	/* Page Title > background-color */
-	--color-h1-bg: rgb(244, 165, 130);
-	/* Page Title > border-top-color */
-	--color-h1-bt: rgb(244, 165, 130);
-	/* Page Title > font color */
-	--color-h1: rgb(103, 0, 31);
-	/* Page Title - Tabs Counter > font color */
-	--color-tabs-count: rgb(178, 24, 43);
-	/* List Tabs, discarded > font color  */
-	--color-discarded: rgb(103, 0, 31);
-	/* List Tabs, hidden > font color */
-	--color-hidden: rgb(103, 0, 31);
-	/* List Tabs Chronicle > font color */
+	--color-tabs-toolbar-bb: rgb(103,0,31);
+	--color-list-toolbar-bg: rgb(178,24,43);
+	--color-tabs-toolbar-bg: rgb(244,165,130);
+	--color-list-tab-bg: rgb(232,140,115);
+	--color-list-tab-hover-active-bg: rgb(244,165,130);
+	--color-list-tab-active-bb: rgb(244,165,130);
+	--color-list-tab-font: rgb(103,0,31);
+	--color-h1-bg: rgb(244,165,130);
+	--color-h1-bt: rgb(244,165,130);
+	--color-h1: rgb(103,0,31);
+	--color-tabs-count: rgb(178,24,43);
+	--color-discarded: rgb(103,0,31);
+	--color-hidden: rgb(103,0,31);
 	--color-switch-history: rgb(247, 247, 247);
-	/* List Tabs > background-color */
-	--color-li-bg: rgb(214, 96, 77);
-	/* List Tabs, hover > background-color */
-	--color-li-hover-bg: rgb(244, 165, 130);
-	/* List Tabs, active > background-color */
-	--color-active-bg: rgb(244, 165, 130);
-	/* List Tabs Popup > background-color */
-	--color-popupWrap: rgb(244, 165, 130);
-	/* List Tabs > border-bottom-color */
-	--color-switch-tabs-switch-history-bb: rgb(103, 0, 31);
-	/* List Tabs > border-top-color */
-	--color-switch-tabs-switch-history-bt: rgb(253, 219, 199);
-
-	/* FavIcon, discarded Tabs */
-	--icon-discarded: url('../icons/icon-discarded-light.png');
-	/* FavIcon, hidden Tabs */
-	--icon-hidden: url('../icons/icon-hidden-light.png');
-	/* FavIcon, default Tabs */
-	--icon-default: url('../icons/icon-default-light.png');
+	--color-li-bg: rgb(214,96,77);
+	--color-li-hover-bg: rgb(244,165,130);
+	--color-active-bg: rgb(244,165,130);
+	--color-popupWrap: rgb(244,165,130);
+	--color-switch-tabs-switch-history-bb: rgb(103,0,31);
+	--color-switch-tabs-switch-history-bt: rgb(253,219,199);
 }
+
+.icon , .btn {
+	/* BaseColor : rgb(255, 224, 182) */
+	filter: sepia(28%) saturate(332%) hue-rotate(346deg) brightness(101%) contrast(105%);
+}
+
+.icon:hover , .btn:hover {
+	/*  BaseColor : rgb(235, 194, 138) */
+	filter: sepia(63%) saturate(381%) hue-rotate(322deg) brightness(97%) contrast(89%);
+}
+
+/* rgb(178,24,43)|rgb(247, 247, 247)|rgb(253, 219, 199)|rgb(253, 219, 199)|rgb(253, 219, 199)|rgb(103,0,31)|rgb(178,24,43)|rgb(244,165,130)|rgb(232,140,115)|rgb(244,165,130)|rgb(244,165,130)|rgb(103,0,31)|rgb(244,165,130)|rgb(244,165,130)|rgb(103,0,31)|rgb(178,24,43)|rgb(103,0,31)|rgb(103,0,31)|rgb(247, 247, 247)|rgb(214,96,77)|rgb(244,165,130)|rgb(244,165,130)|rgb(244,165,130)|rgb(103,0,31)|rgb(253,219,199)|rgb(255, 224, 182)|rgb(235, 194, 138) */

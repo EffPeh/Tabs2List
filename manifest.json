@@ -6,13 +6,13 @@
 	"sidebar_action": {
 		"default_icon": "icons/icon.svg",
 		"default_title" : "__MSG_extension_name__",
-		"default_panel": "popup/popup.html"
+		"default_panel": "popup/sidebar.html"
 	},
 
 	"description": "__MSG_extension_description__",
 	"manifest_version": 2,
 	"name": "__MSG_extension_name__",
-	"version": "1.1",
+	"version": "1.2",
 	"icons": {
 		"48": "icons/icon.svg"
 	},
@@ -28,8 +28,8 @@
 	"browser_action": {
 		"default_icon": "icons/icon.svg",
 		"theme_icons": [{
-			"light": "icons/icon-dark.svg",
-			"dark": "icons/icon.svg",
+			"light": "icons/icon-light.svg",
+			"dark": "icons/icon-dark.svg",
 			"size": 32
 		}],
 		"default_title": "__MSG_extension_name__",

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="light-theme.css"/>
+		<link rel="stylesheet" href="common.css"/>
+	</head>
+
+	<body>
+		<div id="list-toolbar" class="fix-top"><div id="button-tabs" class="list-tab list-tab-active" data="list-1">__MSG_Tabs__</div><div id="button-hidden" class="list-tab list-hide" data="list-3">__MSG_HiddenTabs__</div><div id="button-history" class="list-tab" data="list-2">__MSG_Chronic__</div><span id="options" class="icon" title="__MSG_Options__"></span></div>
+
+		<div id="list-1" class="list">
+			<div class="fix">
+				<h1>__MSG_TabsList__<span id="tabs-count"></span></h1>
+				<div class="tabs-toolbar">
+					<span id="search-tabs" class="icon search" title="__MSG_PH_Search__"></span>
+					<span id="create-tab" class="icon" title="__MSG_NewTab__"></span>
+					<span id="auto-hide" class="icon" title="__MSG_AutoHide__"></span>
+					<span id="hide-all-tabs" class="icon" title="__MSG_HideAllTabs__"></span>
+					<span id="export-list" class="icon" title="__MSG_Export__"></span>
+				</div>
+				<div id="list-search-wrap"><input id="list-search" value="" placeholder="__MSG_PH_Search__" /></div>
+			</div>
+			<ul id="tabs-list"></ul>
+		</div>
+
+		<div id="list-2" class="list list-hide">
+			<div class="fix">
+				<h1>__MSG_History__</h1>
+				<div class="tabs-toolbar">
+					<span id="delete-history" class="icon" title="__MSG_DelHistory__"></span>
+				</div>
+			</div>
+			<ul id="tabs-history"></ul>
+		</div>
+		
+		<div id="list-3" class="list list-hide">
+			<div class="fix">
+				<h1>__MSG_TabsHidden__<span id="tabs-hidden-count"></span></h1>
+				<div class="tabs-toolbar">
+					&nbsp;
+				</div>
+			</div>
+			<ul id="tabs-hidden"></ul>
+		</div>
+
+		<script src="../lib/i18n.js"></script>
+		<script src="popup.js"></script>
+	</body>
+</html>

@@ -265,5 +265,35 @@
 	},
 	"OP_in": {
 		"message": "w"
+	},
+	"OP_PopupWidth": {
+		"message": "Šěrokosć wuskakowaceho wokna"
+	},
+	"OP_PopupWidth_txt": {
+		"message": "Tu móžeće šěrokosć wuskakowaceho wokna nastajić."
+	},
+	"OP_SearchOn": {
+		"message": "Pytanska funkcija"
+	},
+	"OP_SearchOn_txt": {
+		"message": "Pytanska funkcija ma so hižo při startowanju wočinić."
+	},
+	"audioTab": {
+		"message": "Rajtark zněmić abo zněmjenje anulować"
+	},
+	"HiddenTabs": {
+		"message": "Schowane"
+	},
+	"TabsHidden": {
+		"message": "Schowane rajtarki"
+	},
+	"OP_HiddenTabsList": {
+		"message": "Schowane rajtarki"
+	},
+	"OP_HiddenTabsList_txt": {
+		"message": "Schowane rajtarki w přidatnej lisćinje pokazać."
+	},
+	"Symbols_F": {
+		"message": "- Rajtark z awditiwnym medijowym wobsahom"
 	}
 }

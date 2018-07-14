@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">  <image id="image0" width="48" height="48" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN RQfiBRYHAA7IPayYAAAAaElEQVRYw+2TQQrAIAwEVfrw/lwvBqQeFsQQUmYOJgpmxWVLAUGdta9n 3ZYLsx/bvZ+6difY7eb5Pf8QcDe57vPvvh0P5GyCFi9A0CT5PSBo8QIETZLfA4IWL0DQJPk9IGjx Au4mg2QAFNAsUVTGZoYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDUtMjJUMDc6MDA6MTQtMDc6 MDCgNLigAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA1LTIyVDA3OjAwOjE0LTA3OjAw0WkAHAAA AABJRU5ErkJggg=="/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="48" height="48" version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g fill="#808080" fill-rule="evenodd" stroke-width=".26458">
+  <g transform="translate(3.5763e-8 .011255)">
+   <rect x=".55941" y=".65775" width="1.637" height="1.637"/>
+   <rect x="3.1494" y=".6576" width="8.9912" height="1.6371"/>
+  </g>
+  <g transform="translate(3.5763e-8 2.4425)">
+   <rect x=".55941" y=".65775" width="1.637" height="1.637"/>
+   <rect x="3.1494" y=".6576" width="8.9912" height="1.6371"/>
+  </g>
+  <g transform="translate(3.5763e-8 4.8738)">
+   <rect x=".55941" y=".65775" width="1.637" height="1.637"/>
+   <rect x="3.1494" y=".6576" width="8.9912" height="1.6371"/>
+  </g>
+  <g transform="translate(3.5763e-8 7.305)">
+   <rect x=".55941" y=".65775" width="1.637" height="1.637"/>
+   <rect x="3.1494" y=".6576" width="8.9912" height="1.6371"/>
+  </g>
+  <g transform="translate(3.5763e-8 9.7363)">
+   <rect x=".55941" y=".65775" width="1.637" height="1.637"/>
+   <rect x="3.1494" y=".6576" width="8.9912" height="1.6371"/>
+  </g>
+ </g>
 </svg>

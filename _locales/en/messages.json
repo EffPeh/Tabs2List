@@ -265,5 +265,35 @@
 	},
 	"OP_in": {
 		"message": "in"
+	},
+	"OP_PopupWidth": {
+		"message": "Popup Width"
+	},
+	"OP_PopupWidth_txt": {
+		"message": "Here you can specify the width of the popup window."
+	},
+	"OP_SearchOn": {
+		"message": "Search Function"
+	},
+	"OP_SearchOn_txt": {
+		"message": "The search function should already be open at startup."
+	},
+	"audioTab": {
+		"message": "Mute or unmute the tab."
+	},
+	"HiddenTabs": {
+		"message": "Hidden"
+	},
+	"TabsHidden": {
+		"message": "Hidden tabs"
+	},
+	"OP_HiddenTabsList": {
+		"message": "Hidden tabs"
+	},
+	"OP_HiddenTabsList_txt": {
+		"message": "Show hidden tabs in additional list."
+	},
+	"Symbols_F": {
+		"message": "- Tab with audible media content"
 	}
 }

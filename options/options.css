@@ -70,7 +70,8 @@ a:hover {
 	height: 50px;
 	background-image: url("../icons/icon.svg");
 	background-repeat: no-repeat;
-	background-position: center;	
+	background-position: center;
+	background-size: 48px 48px;
 }
 #logo-title {
 	font-size: 2em;
@@ -118,11 +119,20 @@ label {
 
 .form {
 	grid-area: right;
+	text-align: center;
 }
 
 input, select {
 	box-sizing: border-box;
-	width: 100%;
+	width: 90%;
+}
+
+input[type="number"] {
+	width: 33.33%;
+}
+
+input[type="checkbox"] {
+	width: auto;
 }
 
 .info {
@@ -140,6 +150,11 @@ h2 {
 	margin: 0px 0px 10px 0px;
 	color: var(--grey-90);
 	border-bottom: 1px solid var(--grey-20);
+}
+
+img {
+	width: 16px;
+	height: 16px;
 }
 
 p img {
@@ -179,7 +194,8 @@ li {
 }
 
 a {
-	background-image: url("../icons/icon-link.png");
+	background-size: 16px 16px;
+	background-image: url("../icons/icon-link.svg");
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-left: 20px;

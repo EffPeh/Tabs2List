@@ -1,59 +1,39 @@
 ﻿:root {
-	/* Sidebar > background-color */
-	--color-body-bg: rgb(166, 54, 3);
-	/* All > font color , Tabs > font color, normal */
-	--color-body: rgb(42, 13, 1);
-	/* Page Tabs > border-top-color , border-left-color , border-right-color */
-	--color-list-tab: rgb(127, 39, 4);
-	/* Page Toolbar, top > box-shadow = border color */
-	--color-list-toolbar-bs: rgb(127, 39, 4);
-	/*  Page Tabs, inactive > border-bottom-color */
-	--color-list-tab-bb: rgb(127, 39, 4);
-	/* Page Toolbar > border-bottom-color */
-	--color-tabs-toolbar-bb: rgb(166, 54, 3);
-	/* Page Toolbar > background-color */
-	--color-list-toolbar-bg: rgb(166, 54, 3);
-	/* Page Toolbar, Button Bar > background-color */
-	--color-tabs-toolbar-bg: rgb(253, 174, 107);
-	/* Page Tabs, inactive > background-color */
-	--color-list-tab-bg: rgb(252, 160, 79);
-	/* Page Tabs, active/hover > background-color */
-	--color-list-tab-hover-active-bg: rgb(253, 174, 107);
-	/* Page Tabs, active > border-bottom-color */
-	--color-list-tab-active-bb: rgb(253, 174, 107);
-	/* Page Tabs, font color */
-	--color-list-tab-font: rgb(127, 39, 4);
-	/* Page Title > background-color */
-	--color-h1-bg: rgb(253, 174, 107);
-	/* Page Title > border-top-color */
-	--color-h1-bt: rgb(253, 174, 107);
-	/* Page Title > font color */
-	--color-h1: rgb(127, 39, 4);
-	/* Page Title - Tabs Counter > font color */
-	--color-tabs-count: rgb(166, 54, 3);
-	/* List Tabs, discarded > font color  */
-	--color-discarded: rgb(127, 39, 4);
-	/* List Tabs, hidden > font color */
-	--color-hidden: rgb(127, 39, 4);
-	/* List Tabs Chronicle > font color */
-	--color-switch-history: rgb(42, 13, 1);
-	/* List Tabs > background-color */
-	--color-li-bg: rgb(226, 112, 54);
-	/* List Tabs, hover > background-color */
-	--color-li-hover-bg: rgb(253, 174, 107);
-	/* List Tabs, active > background-color */
-	--color-active-bg: rgb(253, 174, 107);
-	/* List Tabs Popup > background-color */
-	--color-popupWrap: rgb(253, 174, 107);
-	/* List Tabs > border-bottom-color */
-	--color-switch-tabs-switch-history-bb: rgb(166, 54, 3);
-	/* List Tabs > border-top-color */
-	--color-switch-tabs-switch-history-bt: rgb(253, 208, 162);
-
-	/* FavIcon, discarded Tabs */
-	--icon-discarded: url('../icons/icon-discarded-dark.png');
-	/* FavIcon, hidden Tabs */
-	--icon-hidden: url('../icons/icon-hidden-dark.png');
-	/* FavIcon, default Tabs */
-	--icon-default: url('../icons/icon-default-dark.png');
+	--color-body-bg: rgb(166,54,3);
+	--color-body: rgb(42,13,1);
+	--color-list-tab: rgb(127,39,4);
+	--color-list-toolbar-bs: rgb(127,39,4);
+	--color-list-tab-bb: rgb(127,39,4);
+	--color-tabs-toolbar-bb: rgb(166,54,3);
+	--color-list-toolbar-bg: rgb(166,54,3);
+	--color-tabs-toolbar-bg: rgb(253,174,107);
+	--color-list-tab-bg: rgb(252,160,79);
+	--color-list-tab-hover-active-bg: rgb(253,174,107);
+	--color-list-tab-active-bb: rgb(253,174,107);
+	--color-list-tab-font: rgb(127,39,4);
+	--color-h1-bg: rgb(253,174,107);
+	--color-h1-bt: rgb(253,174,107);
+	--color-h1: rgb(127,39,4);
+	--color-tabs-count: rgb(166,54,3);
+	--color-discarded: rgb(127,39,4);
+	--color-hidden: rgb(127,39,4);
+	--color-switch-history: rgb(42,13,1);
+	--color-li-bg: rgb(240, 142, 81);
+	--color-li-hover-bg: rgb(253,174,107);
+	--color-active-bg: rgb(253,174,107);
+	--color-popupWrap: rgb(253,174,107);
+	--color-switch-tabs-switch-history-bb: rgb(166,54,3);
+	--color-switch-tabs-switch-history-bt: rgb(253,208,162);
 }
+
+.icon , .btn {
+	/* BaseColor : rgb(191, 217, 193) */
+	filter: sepia(7%) saturate(682%) hue-rotate(62deg) brightness(89%) contrast(90%);
+}
+
+.icon:hover , .btn:hover {
+	/*  BaseColor : rgb(198, 241, 243) */
+	filter: sepia(39%) saturate(143%) hue-rotate(134deg) brightness(101%) contrast(94%);
+}
+
+/* rgb(166,54,3)|rgb(42,13,1)|rgb(127,39,4)|rgb(127,39,4)|rgb(127,39,4)|rgb(166,54,3)|rgb(166,54,3)|rgb(253,174,107)|rgb(252,160,79)|rgb(253,174,107)|rgb(253,174,107)|rgb(127,39,4)|rgb(253,174,107)|rgb(253,174,107)|rgb(127,39,4)|rgb(166,54,3)|rgb(127,39,4)|rgb(127,39,4)|rgb(42,13,1)|rgb(240, 142, 81)|rgb(253,174,107)|rgb(253,174,107)|rgb(253,174,107)|rgb(166,54,3)|rgb(253,208,162)|rgb(191, 217, 193)|rgb(198, 241, 243) */
